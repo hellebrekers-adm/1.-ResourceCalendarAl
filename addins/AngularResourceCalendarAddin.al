@@ -24,9 +24,9 @@ controladdin AngularResourceCalendarAddin
 
     //Load startup script
     StartupScript = 'Scripts/startup.js';
-    Scripts = 'https://h2909571.stratoserver.net/HellebrekerPackages/ResourceCalendar/External/js/angwrapper.js';
+    Scripts = 'https://raw.githubusercontent.com/hellebrekers-adm/ResourceCalendarExternalPackages/main/js/angwrapper.js';
     //Load stylesheet
-    StyleSheets = 'https://h2909571.stratoserver.net/HellebrekerPackages/ResourceCalendar/External/style/styles.css',
+    StyleSheets = 'https://raw.githubusercontent.com/hellebrekers-adm/ResourceCalendarExternalPackages/main/style/styles.css',
                     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
 
     //Load scripts as images so they are loaded before the control is loaded
