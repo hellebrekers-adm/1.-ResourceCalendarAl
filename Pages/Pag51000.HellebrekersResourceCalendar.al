@@ -56,11 +56,8 @@ page 51000 HellebrekersResourceCalendar
                     if _employeeRecord.Get(_truckerRecord.Employee) then begin
                         if _orderRecord.Get("Sales Document Type"::Order, _truckerRecord.Order) then begin
                             _startDate := CreateDateTime(_orderRecord."Requested Delivery Date", _truckerRecord."Requested Delivery Time");
-                            // _startDate := CurrentDateTime;
                             _title := _truckerRecord.Employee + '  |' + _orderRecord."No." + ' / ' + _orderRecord."Sell-to Customer No." + ' / ' + _orderRecord."Sell-to Customer Name";
-                            // startDateTime: DateTime; endDateTime: DateTime; id: Text; itemText: Text; employeeID: Text; backColor: Text
                             CurrPage.AgenadAddin.AddEvent(_startDate, _startDate, _truckerRecord.Order, _title, _truckerRecord.Employee, _employeeRecord.Color);
-                            // CurrPage.AgenadAddin.AddEvent(_startDate, _startDate, _truckerRecord.Order, _title, _truckerRecord.Employee, _employeeRecord.Color, 'test', 'test');
                         end;
                     end;
                 end;
