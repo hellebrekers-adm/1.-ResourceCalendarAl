@@ -22,14 +22,16 @@ page 51000 HellebrekersResourceCalendar
                     begin
                         AddAllEmployees();
                     end;
-
-
                 }
             }
         }
     }
 
-    procedure AddAllEmployees()
+
+    /// <summary>
+    /// Adds all employees to the calendar
+    /// </summary>
+    internal procedure AddAllEmployees()
     var
         _employee: Record Employee;
     begin
@@ -41,7 +43,11 @@ page 51000 HellebrekersResourceCalendar
         AddAllEvents();
     end;
 
-    procedure AddAllEvents()
+
+    /// <summary>
+    /// Adds all events to the calendar
+    /// </summary>
+    internal procedure AddAllEvents()
     var
         _truckerRecord: Record Truckplanning;
         _employeeRecord: Record Employee;
